@@ -6,7 +6,7 @@ import { MongooseModule } from '@nestjs/mongoose'
 
 @Module({
 	imports: [
-		MongooseModule.forRoot('mongodb://localhost:27017/air-quality'),
+		MongooseModule.forRoot('mongodb+srv://air-quality:1254889@cluster0.hw1ns.mongodb.net/air-quality?retryWrites=true&w=majority'),
 		MeasurementsModule,
 	],
 	controllers: [AppController],
